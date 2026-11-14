@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="UTF-8"><title>Desk card · The Evidence Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans-Italic.ttf');font-style:italic}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--bg:#232b33;--acc-g:#9fc4d0;--ink:#1a1a1c;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--serif:'Domine',Georgia,serif;--sans:'Funnel Sans','Segoe UI',sans-serif;--mono:'Nanum Gothic Coding',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:9.6pt;line-height:1.42;color:var(--ink);background:#e8e6df}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,20,30,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--bg);color:#fff;padding:8mm 12mm 6mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc-g)}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:var(--acc-g);margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:20pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:var(--acc-g)}
+.top p{margin:3pt 0 0;color:rgba(255,255,255,.78);font-size:9.5pt}
+.grid{flex:1;display:flex;flex-wrap:wrap;padding:6mm 10mm 0;gap:4mm 5mm;align-content:flex-start}
+.panel{width:calc(50% - 2.5mm);border-top:2.5pt solid var(--acc);padding-top:3pt}
+.panel.wide{width:100%}
+.panel h2{font-weight:700;margin:1pt 0 3pt;font-size:12.5pt;display:flex;align-items:baseline;gap:6pt}
+.panel h2 span{font-family:var(--mono);font-size:7pt;letter-spacing:.14em;color:var(--acc);font-weight:700}
+.panel p{margin:0 0 2.5pt;font-size:8.6pt;line-height:1.38}
+.panel.wide .cols{display:flex;gap:5mm}
+.panel.wide .cols>div{flex:1}
+.bottom{display:flex;gap:5mm;padding:3.5mm 10mm 5mm;border-top:.6pt solid var(--rule);margin:3mm 10mm 0}
+.bottom>div{flex:1}
+.bottom h3{font-family:var(--mono);font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;margin:0 0 2pt;font-weight:700}
+.bottom p{font-size:8.8pt;line-height:1.38}
+.foot{padding:2mm 10mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+</style></head><body>
+<div class="page">
+<div class="top">
+<div class="kicker">The Evidence Deck · Desk card</div>
+<h1>Every card. <em>Every line.</em></h1>
+<p>The whole deck on one page. Pin it up; the lines do the remembering.</p>
+</div>
+<div class="grid"><div class="panel" style="--acc:#8A6A1F">
+<h2><span>01</span>Claims</h2>
+<p><b>Policy versus control</b> — <i>A policy is a claim. A control is a claim that has survived testing.</i></p><p><b>The board does not need a policy</b> — <i>The board does not need a policy. It needs to know whether the policy is true.</i></p><p><b>The demo versus the deployment</b> — <i>A demo is engineered to be impressive. A deployment has to work.</i></p><p><b>Fluency is camouflage</b> — <i>The most dangerous AI output is the one nobody checked.</i></p><p><b>Agreement is not evidence</b> — <i>Agreement is not evidence.</i></p>
+</div><div class="panel" style="--acc:#2F6B5E">
+<h2><span>02</span>Gates</h2>
+<p><b>Gate one: prototype to bounded pilot</b> — <i>A polished prototype is not a production system.</i></p><p><b>Gate two: pilot to production</b> — <i>Do not quietly widen the scope.</i></p><p><b>Gate three: continued operation</b> — <i>Is it still working — and how would you know if it stopped?</i></p><p><b>Re-baselining</b> — <i>A changed threshold is a new decision to explain.</i></p><p><b>The dangerous practitioner</b> — <i>Name the line before you ship.</i></p>
+</div><div class="panel" style="--acc:#B54A36">
+<h2><span>03</span>Measurement</h2>
+<p><b>Headline accuracy is an assertion</b> — <i>Headline accuracy is an assertion, not evidence.</i></p><p><b>A model without a threshold</b> — <i>A model without a stated threshold is a demo, not an evaluation.</i></p><p><b>The worst-group gap</b> — <i>The worst-group gap is the honest headline.</i></p><p><b>Adversarial testing</b> — <i>Break it on purpose, before someone else does it for you.</i></p><p><b>Small samples</b> — <i>A sample that cannot support the claim is an anecdote with a date.</i></p>
+</div><div class="panel" style="--acc:#4E5D6B">
+<h2><span>04</span>Ratings</h2>
+<p><b>The defensible Partial</b> — <i>A defensible Partial is worth more than an unsupported Met.</i></p><p><b>Triangulation</b> — <i>If they disagree, the disagreement is the finding.</i></p><p><b>The limitation beside the rating</b> — <i>Limitations belong beside the rating.</i></p><p><b>Refusing to rate</b> — <i>A refusal to rate is a finding.</i></p>
+</div><div class="panel wide" style="--acc:#6B4E5F">
+<h2><span>05</span>Records</h2>
+<div class="cols"><p><b>The proof brief, before building</b> — <i>Start the brief now. Don&#x27;t reconstruct the reasoning after the results.</i></p><p><b>The dossier</b> — <i>The product is a defensible judgement.</i></p><p><b>The conversation log</b> — <i>A demo persuades; a log proves.</i></p><p><b>The threshold sentence</b> — <i>For this decision, good enough means this, because of this.</i></p></div>
+</div></div>
+<div class="bottom"><div><h3>Prove, don&#x27;t persuade</h3><p>A demo persuades; a log proves. The log shows where the AI was confidently wrong and you caught it.</p></div><div><h3>The defensible Partial</h3><p>A Partial with a clear limitation gives the board a decision. A Met with no evidence gives comfort that has not been earned.</p></div><div><h3>The three gates</h3><p>Prototype, pilot, continued operation — each gate has its own evidence, and the dangerous practitioner cannot see the line.</p></div></div>
+<div class="foot"><span>Anyone can demo AI. The edge is proving it works.</span><span>Free to print and share · not for resale</span></div>
+</div></body></html>
