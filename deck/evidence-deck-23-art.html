@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>The Evidence Deck — 23 cards, art edition (print & cut)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: 'Funnel Sans', 'Avenir Next', 'Segoe UI', sans-serif; background: #ececec; color: #14151a; }
+.no-print { max-width: 192mm; margin: 10mm auto 6mm; padding: 5mm 7mm; background: #232b33; color: #fff;
+  border-radius: 3mm; font-size: 9pt; line-height: 1.5; }
+.no-print strong { color: #9fc4d0; }
+.no-print button { margin-top: 2.5mm; padding: 2mm 5mm; border: 0; border-radius: 2mm; background: #9fc4d0;
+  color: #232b33; font: 700 9.5pt/1 inherit; font-family: inherit; cursor: pointer; }
+@page { size: A4; margin: 9mm; }
+.sheet { width: 192mm; margin: 8mm auto; padding: 0; display: grid;
+  grid-template-columns: repeat(2, 1fr); grid-auto-rows: 67mm; gap: 3mm;
+  background: #fff; box-shadow: 0 1mm 4mm rgba(20,20,30,.18); }
+@media print { body { background: #fff; } .sheet { margin: 0; box-shadow: none; } .no-print { display: none; } }
+.card { border: 0.4mm dashed #b0b0b0; border-radius: 3mm; padding: 3.5mm 4mm; overflow: hidden;
+  display: flex; flex-direction: column; break-inside: avoid; page-break-inside: avoid; }
+{catrules}
+.top { display: flex; align-items: center; justify-content: space-between; }
+.chip { display: inline-block; padding: 1mm 2.8mm; border-radius: 5mm; background: var(--c); color: #fff;
+  font-size: 6.3pt; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.num { font-size: 7pt; font-weight: 600; color: #9a9aa0; letter-spacing: .06em; }
+.title { font-size: 11.5pt; font-weight: 700; line-height: 1.16; margin: 2mm 0 0; color: #14151a; }
+.lbl { font-size: 5.9pt; font-weight: 700; letter-spacing: .1em; color: var(--c); margin: 1.6mm 0 .6mm;
+  text-transform: uppercase; }
+p.a, p.b { font-size: 7.9pt; line-height: 1.32; color: #33353c; }
+.line { margin-top: auto; padding-top: 1.6mm; border-top: 0.3mm solid rgba(20,21,26,.14);
+  font-size: 8.2pt; font-style: italic; font-weight: 600; line-height: 1.25; color: var(--c); }
+.card.cover { border-style: solid; background: #232b33; border-color: #232b33; color: #ECE7DB; }
+.cover .kicker { font-size: 6.6pt; font-weight: 700; letter-spacing: .2em; color: #9fc4d0; text-transform: uppercase; margin-top: 2mm; }
+.cover h1 { font-size: 18pt; font-weight: 700; line-height: 1.1; margin: 2mm 0 0; color: #fff; }
+.cover .sub { font-size: 8.4pt; margin-top: 1.6mm; color: rgba(255,255,255,.8); line-height: 1.35; }
+.cover .cats { margin-top: 2mm; font-size: 6.4pt; line-height: 1.55; color: rgba(255,255,255,.8); }
+.dot { display: inline-block; width: 2.4mm; height: 2.4mm; border-radius: 50%; margin-right: 2mm; }
+.cover .tag { margin-top: auto; padding-top: 2mm; font-size: 8pt; font-style: italic; font-weight: 600; color: #9fc4d0; }
+
+.card { padding: 0; }
+.art { position: relative; height: 21mm; flex: none; }
+.art .img { position: absolute; inset: 0; background-image: var(--ill); background-size: cover;
+  background-position: center; filter: grayscale(1) sepia(1) saturate(2.6) hue-rotate(var(--h)) brightness(.92) contrast(1.05); }
+.art .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,14,16,.30), rgba(12,14,16,.82)); }
+.art .top { position: absolute; left: 0; right: 0; top: 0; padding: 2.2mm 3.5mm;
+  display: flex; align-items: center; justify-content: space-between; }
+.art .chip { background: rgba(12,14,16,.55); }
+.art .num { color: rgba(255,255,255,.85); }
+.body { flex: 1; padding: 2.6mm 4mm 3mm; display: flex; flex-direction: column; min-height: 0; }
+.line { color: #6b5a35; }
+.card.cover-art { border-style: solid; border-color: #232b33; position: relative; padding: 0; }
+.cover-art .cimg { position: absolute; inset: 0; background-image: url('../assets/art/cover.png');
+  background-size: cover; background-position: center; filter: brightness(.9); }
+.cover-art .cshade { position: absolute; inset: 0; background: linear-gradient(200deg, rgba(10,11,14,.25) 0%, rgba(10,11,14,.60) 55%, rgba(10,11,14,.93) 100%); }
+.cover-art .cov { position: relative; margin-top: auto; padding: 4mm; display: flex; flex-direction: column; height: 100%; }
+
+.card .title { font-size: 10.5pt; }
+.card p.a, .card p.b { font-size: 7.3pt; line-height: 1.27; }
+.card .line { font-size: 7.6pt; }
+
+.card.claims { --h: 165deg; --ill: url('../assets/art/ill/claims.png'); }
+.card.gates { --h: 330deg; --ill: url('../assets/art/ill/gates.png'); }
+.card.measurement { --h: 110deg; --ill: url('../assets/art/ill/measurement.png'); }
+.card.ratings { --h: 0deg; --ill: url('../assets/art/ill/ratings.png'); }
+.card.records { --h: 190deg; --ill: url('../assets/art/ill/records.png'); }</style></head><body>
+<div class="no-print">
+<strong>Art edition.</strong> A4 &middot; scale <strong>100% / Actual size</strong> &middot; background graphics: on.
+Portrait cards, 6 per page, 4 pages — the first card is the box-art cover. Cut along the dashed lines.
+Free to print and share; not for resale. This is not a sales document.
+<button onclick="window.print()">Print</button>
+</div>
+<div class="sheet"><div class="card cover-art"><div class="cimg"></div><div class="cshade"></div><div class="cov">
+<div class="kicker">A DECK OF DEFENSIBLE JUDGEMENTS</div><h1>The Evidence Deck</h1><div class="sub">23 cards of evidence discipline for anyone evaluating AI systems.</div>
+<div class="tag">Anyone can demo AI. The edge is proving it works.</div></div></div>
+<div class="card claims">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">CLAIMS</span><span class="num">01 / 23</span></div></div>
+<div class="body"><h2 class="title">Policy versus control</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">A written policy reads like an accomplished fact, and the audit inherits the feeling instead of the truth.</p>
+<div class="lbl">THE MOVE</div><p class="b">A policy is a claim about how the organisation intends to operate. A control is the practice that actually reduces risk. Audit the practice.</p>
+<p class="line">A policy is a claim. A control is a claim that has survived testing.</p></div></div>
+<div class="card claims">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">CLAIMS</span><span class="num">02 / 23</span></div></div>
+<div class="body"><h2 class="title">The board does not need a policy</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Boards are shown documents and asked to feel reassured.</p>
+<div class="lbl">THE MOVE</div><p class="b">The board needs to know whether the policy is true. A report that repeats management&#x27;s assurances is not assurance; a report that tests them is.</p>
+<p class="line">The board does not need a policy. It needs to know whether the policy is true.</p></div></div>
+<div class="card claims">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">CLAIMS</span><span class="num">03 / 23</span></div></div>
+<div class="body"><h2 class="title">The demo versus the deployment</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">A working demo proves the solution runs. Runs is not reliable, and the gap between them is where applied AI lives.</p>
+<div class="lbl">THE MOVE</div><p class="b">Read every demo as an assertion: a claim that has not yet met its evidence. A deployment has to survive inputs the demo never showed you.</p>
+<p class="line">A demo is engineered to be impressive. A deployment has to work.</p></div></div>
+<div class="card claims">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">CLAIMS</span><span class="num">04 / 23</span></div></div>
+<div class="body"><h2 class="title">Fluency is camouflage</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The smooth answer gets a pass because it reads well.</p>
+<div class="lbl">THE MOVE</div><p class="b">Fluency is not a signal of correctness or fairness; it is camouflage. Separate how it reads from whether it holds.</p>
+<p class="line">The most dangerous AI output is the one nobody checked.</p></div></div>
+<div class="card claims">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">CLAIMS</span><span class="num">05 / 23</span></div></div>
+<div class="body"><h2 class="title">Agreement is not evidence</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">A session where the AI was right every time feels like proof of reliability.</p>
+<div class="lbl">THE MOVE</div><p class="b">A demo persuades; a log proves — because the log shows the work, including where the AI was confidently wrong and you caught it. If the log reads as a smooth collaboration, you have written persuasion, not proof.</p>
+<p class="line">Agreement is not evidence.</p></div></div></div><div class="sheet"><div class="card gates">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">GATES</span><span class="num">06 / 23</span></div></div>
+<div class="body"><h2 class="title">Gate one: prototype to bounded pilot</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Polished prototypes get shown to clients as if they were systems.</p>
+<div class="lbl">THE MOVE</div><p class="b">Before a bounded pilot: defined use, held-out evaluation against the brief, data and security review, named owner, tested fallback, limits on users, actions, duration and volume. Missing any of it? Keep it in development.</p>
+<p class="line">A polished prototype is not a production system.</p></div></div>
+<div class="card gates">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">GATES</span><span class="num">07 / 23</span></div></div>
+<div class="body"><h2 class="title">Gate two: pilot to production</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Pilot scope quietly widens, and the pilot becomes production by drift.</p>
+<div class="lbl">THE MOVE</div><p class="b">Before production: results from representative conditions, measured review workload, incident and rollback rehearsal, monitoring and access controls, approvals from the responsible teams. Missing any? Extend, redesign or stop — do not widen the scope.</p>
+<p class="line">Do not quietly widen the scope.</p></div></div>
+<div class="card gates">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">GATES</span><span class="num">08 / 23</span></div></div>
+<div class="body"><h2 class="title">Gate three: continued operation</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The go-live is treated as the finish line, and the evaluation never runs again.</p>
+<div class="lbl">THE MOVE</div><p class="b">Continued operation requires scheduled and change-triggered evaluation, monitoring of relevant failures, current ownership, and action on threshold breaches. The question changes from &quot;does it work?&quot; to &quot;is it still working, and how would I know if it stopped?&quot;</p>
+<p class="line">Is it still working — and how would you know if it stopped?</p></div></div>
+<div class="card gates">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">GATES</span><span class="num">09 / 23</span></div></div>
+<div class="body"><h2 class="title">Re-baselining</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">A disappointing result gets rescued by rewriting the acceptance rule.</p>
+<div class="lbl">THE MOVE</div><p class="b">After any change to model, prompt, source or workflow: keep the old evidence and run a new comparison. A changed threshold is a new decision to explain, not a way to rescue a score.</p>
+<p class="line">A changed threshold is a new decision to explain.</p></div></div>
+<div class="card gates">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">GATES</span><span class="num">10 / 23</span></div></div>
+<div class="body"><h2 class="title">The dangerous practitioner</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The line between prototype and production is invisible from the inside.</p>
+<div class="lbl">THE MOVE</div><p class="b">The dangerous practitioner is the one who ships a polished prototype as if it were a production system. Say where the line is before you cross it.</p>
+<p class="line">Name the line before you ship.</p></div></div>
+<div class="card measurement">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">MEASUREMENT</span><span class="num">11 / 23</span></div></div>
+<div class="body"><h2 class="title">Headline accuracy is an assertion</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">&quot;90% accurate&quot; lands as evidence, and nobody asks the rest of the sentence.</p>
+<div class="lbl">THE MOVE</div><p class="b">90% on which class, at what cost to the others? Never report an overall number without the per-class and per-group breakdown beneath it.</p>
+<p class="line">Headline accuracy is an assertion, not evidence.</p></div></div></div><div class="sheet"><div class="card measurement">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">MEASUREMENT</span><span class="num">12 / 23</span></div></div>
+<div class="body"><h2 class="title">A model without a threshold</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Evaluation without an acceptance rule can&#x27;t fail, which means it can&#x27;t pass either.</p>
+<div class="lbl">THE MOVE</div><p class="b">State the threshold in the sentence: for this decision, good enough means this number, because this is the blast radius. And a changed threshold is a new decision to explain.</p>
+<p class="line">A model without a stated threshold is a demo, not an evaluation.</p></div></div>
+<div class="card measurement">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">MEASUREMENT</span><span class="num">13 / 23</span></div></div>
+<div class="body"><h2 class="title">The worst-group gap</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The average hides the group the system fails.</p>
+<div class="lbl">THE MOVE</div><p class="b">Compute accuracy per condition and per group. The worst-group gap — the spread between best and worst condition — is the honest headline.</p>
+<p class="line">The worst-group gap is the honest headline.</p></div></div>
+<div class="card measurement">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">MEASUREMENT</span><span class="num">14 / 23</span></div></div>
+<div class="body"><h2 class="title">Adversarial testing</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Most testing asks &quot;does it work on normal inputs?&quot; — the conditions that actually bite are never tried.</p>
+<div class="lbl">THE MOVE</div><p class="b">Ask the opposite: what inputs make it fail? A customer photographs the router in a dark cupboard at midnight, because that is when the fault showed up. A demo evaluated on the happy path has proven nothing about those conditions.</p>
+<p class="line">Break it on purpose, before someone else does it for you.</p></div></div>
+<div class="card measurement">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">MEASUREMENT</span><span class="num">15 / 23</span></div></div>
+<div class="body"><h2 class="title">Small samples</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">A perfect result on a handful of examples reads as dependability.</p>
+<div class="lbl">THE MOVE</div><p class="b">A perfect score on three examples does not establish dependable performance, and a single successful test supports &quot;it worked once&quot;, never &quot;it is tested regularly&quot;.</p>
+<p class="line">A sample that cannot support the claim is an anecdote with a date.</p></div></div>
+<div class="card ratings">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RATINGS</span><span class="num">16 / 23</span></div></div>
+<div class="body"><h2 class="title">The defensible Partial</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Boards prefer clean ratings, and the auditor supplies the clean rating the evidence cannot carry.</p>
+<div class="lbl">THE MOVE</div><p class="b">A defensible Partial says: this part works, this part does not, this part is unknown. It gives the board a decision — accept the gap, fund the fix, or investigate. A Met with no evidence gives comfort that has not been earned.</p>
+<p class="line">A defensible Partial is worth more than an unsupported Met.</p></div></div>
+<div class="card ratings">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RATINGS</span><span class="num">17 / 23</span></div></div>
+<div class="body"><h2 class="title">Triangulation</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">One source — a policy, an interview, a log — gets treated as the whole answer.</p>
+<div class="lbl">THE MOVE</div><p class="b">Three evidence moves: inspect what is said, inquire what people believe, observe what the system recorded. Together they support a rating; alone, each is a claim, a belief or a partial record. If sources disagree, the disagreement is the finding.</p>
+<p class="line">If they disagree, the disagreement is the finding.</p></div></div></div><div class="sheet"><div class="card ratings">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RATINGS</span><span class="num">18 / 23</span></div></div>
+<div class="body"><h2 class="title">The limitation beside the rating</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Limitations get filed in an appendix nobody reads, far from the rating they qualify.</p>
+<div class="lbl">THE MOVE</div><p class="b">Record the limitation beside the rating, plus one sentence on what would change it: &quot;MFA moves to Met if the legacy exception is closed and the log gap is explained.&quot;</p>
+<p class="line">Limitations belong beside the rating.</p></div></div>
+<div class="card ratings">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RATINGS</span><span class="num">19 / 23</span></div></div>
+<div class="body"><h2 class="title">Refusing to rate</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">Thin evidence still pressures a rating, because a blank looks like failure.</p>
+<div class="lbl">THE MOVE</div><p class="b">A good answer refuses to rate when the evidence is thin — and that refusal is itself a finding. Confidence is a delivery property, not a truth property.</p>
+<p class="line">A refusal to rate is a finding.</p></div></div>
+<div class="card records">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RECORDS</span><span class="num">20 / 23</span></div></div>
+<div class="body"><h2 class="title">The proof brief, before building</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The reasoning gets reconstructed after the results are known, which is persuasion with extra steps.</p>
+<div class="lbl">THE MOVE</div><p class="b">Write the brief before you build: intended use, affected people, baseline, acceptance rule with the blast radius, evaluation plan, data boundary, stop rule, evidence record.</p>
+<p class="line">Start the brief now. Don&#x27;t reconstruct the reasoning after the results.</p></div></div>
+<div class="card records">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RECORDS</span><span class="num">21 / 23</span></div></div>
+<div class="body"><h2 class="title">The dossier</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">The evidence lives in twelve places and dies in none of them, so nothing can be defended.</p>
+<div class="lbl">THE MOVE</div><p class="b">One cumulative dossier: brief · sources and boundaries · design · evaluation · review · decision and handover. The product of applied AI is not a model; it is a defensible judgement, and the dossier is where the defence lives.</p>
+<p class="line">The product is a defensible judgement.</p></div></div>
+<div class="card records">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RECORDS</span><span class="num">22 / 23</span></div></div>
+<div class="body"><h2 class="title">The conversation log</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">AI sessions get remembered as collaborations in which the assistant was right.</p>
+<div class="lbl">THE MOVE</div><p class="b">Log per session: date, models, goal, the prompts that mattered, where the AI was wrong and how you corrected it, what you decided to trust and why — plus the unedited transcript. The unedited record is the integrity gate.</p>
+<p class="line">A demo persuades; a log proves.</p></div></div>
+<div class="card records">
+<div class="art"><div class="img"></div><div class="shade"></div><div class="top"><span class="chip">RECORDS</span><span class="num">23 / 23</span></div></div>
+<div class="body"><h2 class="title">The threshold sentence</h2>
+<div class="lbl">WHY IT GOES WRONG</div><p class="a">&quot;Good enough&quot; floats free of the decision, the number and the blast radius.</p>
+<div class="lbl">THE MOVE</div><p class="b">One sentence per evaluation: &quot;For [decision], good enough means [threshold], because [blast radius].&quot; Then an accuracy figure measured once is a photograph — schedule the re-checks.</p>
+<p class="line">For this decision, good enough means this, because of this.</p></div></div></div>
+</body></html>
